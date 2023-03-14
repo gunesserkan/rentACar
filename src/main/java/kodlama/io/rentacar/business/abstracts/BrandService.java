@@ -8,9 +8,13 @@ import kodlama.io.rentacar.business.responses.GetAllBrandsResponse;
 import kodlama.io.rentacar.business.responses.GetByIdBrandResponse;
 
 public interface BrandService {
-    List<GetAllBrandsResponse> getAll();
-    GetByIdBrandResponse getById(int id);
-    void addd(CreateBrandRequest createBrandRequest);
-    void update(UpdateBrandRequest updateBrandRequest);
-    void delete(int id);
+	List<GetAllBrandsResponse> getAll();
+
+	GetByIdBrandResponse getById(int id);
+
+	void add(CreateBrandRequest createBrandRequest);
+
+	void update(UpdateBrandRequest updateBrandRequest);
+
+	void delete(int id);
 }
